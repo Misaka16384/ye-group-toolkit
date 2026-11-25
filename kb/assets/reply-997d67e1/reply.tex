@@ -1,0 +1,414 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{xfrac}
+\usepackage{xr-hyper}
+\usepackage[colorlinks,citecolor=blue]{hyperref}
+\usepackage{graphicx,outlines,physics}
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{longtable,booktabs,outlines}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{subfigure}
+\usepackage{dsfont}
+\usepackage{booktabs}
+\usepackage{amsbsy}
+\usepackage{dcolumn}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{esint}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{cleveref}\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{amsbsy}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{extarrows}
+\usepackage{datetime}
+\usepackage{comment}
+\usepackage[super]{nth}
+\usepackage{tikz-cd}
+\usepackage{pdfpages}
+
+
+
+%\usepackage[compat=1.1.0]{tikz-feynman}
+\graphicspath{{Pictures/}}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+        urlcolor=magenta,
+}
+\def\Z{\mathbb{Z}}
+\newcommand{\red}[1]{{\textcolor{red}{#1}}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{statement}{Statement}
+\newcommand{\mb}{\mathbb}
+\newcommand{\bs}{\boldsymbol}
+\newcommand{\wt}{\widetilde}
+\newcommand{\mc}{\mathcal}
+\newcommand{\ep}{\epsilon}
+\newcommand{\tf}{\textbf}
+
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{breakable}
+	
+  %\textheight 8.5in \textwidth 16cm
+%\oddsidemargin 0pt \evensidemargin 0pt \topmargin -.35in
+%\def\baselinestretch{1.5}
+%\addtolength{\parskip}{2ex}
+% \jot=.5ex
+
+%\usepackage{datetime}
+\def\Z{\mathbb{Z}}
+%\newcommand{\red}[1]{{\textcolor{red}{#1}}}
+\def\epsi{\epsilon^{\mu\nu\lambda} }
+
+\def\ep{\epsilon^{\mu\nu\lambda\rho} }
+\usepackage{extarrows}
+%\usepackage{amsthm}
+
+%\newcommand{\del}[1]{{\iffalse #1 \fi}}
+
+
+\makeatletter
+\newcommand*{\addFileDependency}[1]{% argument=file name and extension
+\typeout{(#1)}% latexmk will find this if $recorder=0
+% however, in that case, it will ignore #1 if it is a .aux or 
+% .pdf file etc and it exists! If it doesn't exist, it will appear 
+% in the list of dependents regardless)
+%
+% Write the following if you want it to appear in \listfiles 
+% --- although not really necessary and latexmk doesn't use this
+%
+\@addtofilelist{#1}
+%
+% latexmk will find this message if #1 doesn't exist (yet)
+\IfFileExists{#1}{}{\typeout{No file #1.}}
+}\makeatother
+
+\newcommand*{\myexternaldocument}[1]{%
+\externaldocument{#1}%
+\addFileDependency{#1.tex}%
+\addFileDependency{#1.aux}%
+}
+
+\myexternaldocument{240628}
+
+
+
+
+%\IfFileExists{siunitx.sty}{\usepackage{booktabs,siunitx}}{}
+\usepackage{datetime}
+
+\usepackage{lineno}
+\title{Letter to Editor and Referees}
+%\author{Jie-Yu Zhang, Meng-Yuan Li, and Peng Ye}
+
+\begin{document}
+\maketitle
+\noindent \textbf{Dear Editors:}
+
+We truly appreciate your editorial efforts in handling our manuscript and sending reports on 3$^{\text{rd}}$ June, 2024. As referee A has mentioned, ``\textit{this is a valuable paper, and the
+connection to higher-order cellular automata used in computer science is
+non-trivial}'', and referee B has mentioned, ``\textit{the paper is clearly presented
+and all results seem valid and, in most cases, novel}'', our manuscript contains abundant and novel results. Referee A suggested that ``\textit{I am happy to recommend this paper for publication in PRX Quantum}'' and referee B suggested that ``\textit{could
+maybe be accepted in PRX Quantum if some more work was done}''.  Also, referee B has mentioned that ``\textit{The
+claims that are proven rigorously in the appendix are nice, and it would
+be good if the other similar claims throughout the paper could be made
+with the same level of rigor.}'' Hereby we are resubmitting the revised manuscript by seriously following the advice of two referees.\bigskip
+
+During the months of waiting for the reports, we continued our exploration into quantum physics, cellular automaton algorithms, and mathematical proofs, inspired by the initial version of our manuscript. Interestingly, many of our discoveries aligned closely with the insightful advice provided by the referees, resulting in a significantly improved version. Especially following the advice of referee B, we added more work to the revised manuscript, so the length of the manuscript has been increased from the original 28 pages to the current 45 pages. 
+\bigskip 
+
+With enriched discussions on physics and strengthened mathematical proofs, our work has made deeper intersection among quantum physics, mathematics, and computer science, to meet the scope and the high standard of PRX Quantum. We are excited to contribute our timely and interdisciplinary work to the community.
+
+
+\hfill Yours sincerely,
+
+\hfill Jie-Yu Zhang, Meng-Yuan Li and Peng Ye
+\\\\
+Our detailed responses to the referee’s comments are listed below, together with a list of main changes to the manuscript. 
+
+\tableofcontents
+
+\section{Main Changes in the Manuscript}
+\begin{outline}[enumerate]
+    \1 A new RSPT model (model-IVb) is added in Sec.~\ref{model_ivb}. The original model-IV is renamed as model-IVa.
+    \1 The multi-point strange correlator detecting model-IVb is added in Sec.~\ref{D-RSPT2}.
+    \1 More mathematical details and some pictures that enhances the accessibility are added in Sec.~\ref{notation}.
+    \1 A new section (Sec.~\ref{MPSC+STEE}) showing our new results, illustrating the relation between the multi-point strange correlator and the spurious topological entanglement entropy.
+    \1 A section comparing the differences between 2D cluster model and model-IVa (denoted as model-IV in the previous version) is added (Appendix~\ref{diff}).
+    \1 A section reviewing different CA approaches in constructing subsystem symmetries is added (Appendix~\ref{ca_review}).
+    \1 A section reviewing the mathematical properties which can decide whether a HOCA rule is chaotic is added (Appendix~\ref{HOCA_prop}).
+    \1 A section discussing the validity of 2 criteria in Sec.~\ref{sc_definition} is added (Appendix~\ref{sc_proof}).
+    \1 A section discussing the universality of HGSPT phases is added (Appendix~\ref{universality}). 
+    \1 Citations mentioned by referees are added to the manuscript.
+    \1 Reference mistakes are fixed in the manuscript.
+    \end{outline}
+
+
+\section{Reply to the referees}
+
+\subsection{Reply to Referee A}
+In general, referee A gave a very positive report on our manuscript, pointing out that our manuscript had made nontrivial connections to computer science and providing a unifying framework to study SPT phases protected by subsystem symmetries, and is happy to recommend this paper for
+publication in PRX Quantum. Detailed reply to referee A are shown below. In \textbf{Reply 1} (wrapped in {\color{blue}blue box}) we made a summary of our replies, and point-to-point replies can be found in \textbf{Reply 2,3} (wrapped in {\color{gray}gray box}).  
+
+\begin{tcolorbox}[title= Reply 1 (general reply), breakable, colframe=blue]
+    \textbf{Referee A:} The authors of ``Higher-order cellular automata generated
+symmetry-protected topological phases and detection through
+multi-point strange correlators'' devise a method to devise topological
+phases of matter protected by subsystem symmetries. These phases have
+been the subject of intense scrutiny in the past few years for their
+lack of a continuum description and their potential use as error
+correcting codes. The possibilities for the choice of subsystem are
+many, and this paper provides a step towards a classification through
+the construction of these subsystem symmetries as arising from
+so-called higher-order cellular automata. Additionally, the authors
+propose a method to detect these exotic topological phases by
+generalizing the 2-point strange correlator designed for ordinary
+symmetry protected topological phases to a multipoint strange
+correlator. I think this is a {\color{red}valuable paper, and the connection to higher-order
+cellular automata used in computer science is non-trivial.} The paper
+is well written, and the examples provide a nice guide to
+understanding the general theory. By providing a classification of
+these subsystem symmetry protected topological phases, the authors
+{\color{red} provide a unifying framework in which the properties of these phases
+can be systematically studied.} I am happy to recommend this paper for
+publication in PRX Quantum.
+\tcblower
+\textbf{Reply:} We gratefully appreciate his/her positive comments on scientific merits and recommendations of our manuscript. We have made several improvements in our manuscript according to his/her valuable comments in order to enhance the completeness and rigorousness. We will show our improvements in \textbf{Reply 2, 3}.
+\begin{outline}[itemize]
+    \1 As for the completeness of our HOCA classification, which is a very difficult problem, we added many mathematical details to demonstrate a weaker version to show the completeness of our HOCA classification. This is discussed in \textbf{Reply 2}. Also, referee B showed similar interests which can be found in \textbf{Reply 7A}.
+    \1 As for the universality of our multi-point strange correlator (MPSC), we made a reply explaining the key idea in constructing MPSC, giving an answer to this question. Detailed information can be found in \textbf{Reply 3}. 
+\end{outline}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Reply 2 (point-to-point reply),breakable]
+\textbf{Referee A:} Is the classification in terms of higher-order cellular automata
+expected to be exhaustive? Can any subsystem symmetry SPT phase be
+understood as a HGSPT phase?
+\tcblower
+\textbf{Reply:} While the HOCA generated symmetries have covered a large class of subsystem configurations, it is hard to claim that we have reached a comprehensive classification of subsystem symmetries. Nevertheless, we have newly proved a weaker conclusion that may partly respond to his/her interests. \\
+
+\textbf{\textit{Proposition:}} Any subsystem symmetry with configurations specified only on an open slab can be generated by appropriately choosing a HOCA rule and an initial condition. \\
+
+In other words, if we only care about the subsystem symmetry that is fixed on an open slab, and symmetry outside of the slab can be arbitrarily chosen, then we can find a HOCA rule and an initial condition defined on a larger area, which generate the given subsystem symmetry on that open slab. The proof of this proposition can be found in Appendix~\ref{universality}.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Reply 3 (point-to-point reply),breakable]
+\textbf{Referee A:}  Does the detection scheme based on multipoint strange correlators only work for HGSPT phases, or is it expected work (perhaps in some modified form) for even more general subsystem symmetry SPT phases?
+\tcblower
+\textbf{Reply:}
+While the spatial configuration of local operators in the multi-point strange correlator are designed specifically for the HGSPT models, the idea of designation is expected to be rather general. The key point of designing such multi-point strange correlator is to find the product of local operators that act differently on the ground state $\ket{\Psi}$ and the trivial product state $\ket{\Omega}$. As a consequence, the idea of multi-point strange correlator is not limited to the detection of HGSPT phases, and can potentially be applied to other SPT phases protected by even more general subsystem symmetries, as long as one can design an efficient algorithm to construct such products of local operators.
+
+As for the universality of MPSC and HGSPT, we have added a section in Appendix~\ref{universality} to show that any general SPT phases protected by subsystem symmetry can be locally simulated by an HGSPT phase. As the MPSC detection is designed for any general HGSPT phase, this in a certain degree answers the universality of the MPSC detection.
+\end{tcolorbox}
+
+
+\subsection{Reply to Referee B}
+In general, referee B gave a positive report on our manuscript, pointing out that our manuscript had made valid and novel results in detecting SPT phases protected by subsystem symmetries with exotic geometries and is clearly presented, and at the same time suggested that more work can be done to make the paper more impactful and mathematically rigorous. Referee B comments that our work can be published in PRX Quantum if some more work are done. Detailed reply to referee B are shown below. In \textbf{Reply 4} (wrapped in {\color{blue}blue box}) we made a summary of our replies, and point-to-point replies can be found in \textbf{Reply 5-11} (wrapped in {\color{gray}gray box}).  
+
+\begin{tcolorbox}[title=Reply 4 (general reply),breakable, colframe=blue]
+\textbf{Referee B:} In the submitted work, the authors use higher-order cellular automata
+(HOCA) to generate new spin models. The new spin models can be viewed
+as symmetry-protected topological (SPT) phases which possess subsystem
+symmetries {\color{red}having geometries that have not previously appeared in the
+literature}. The authors characterize these symmetries with various
+quantities that probe their spatial regularity and self-similarity.
+Finally, the authors propose to detect the SPT order in their models
+using multi-point strange correlators, which generalized the known
+two-point strange correlators.
+The paper is {\color{red}  clearly presented and all results seem valid and, in most
+cases, novel.} However, I feel like some of the ideas can be further
+developed to make the paper more complete and impactful. I think this
+paper can definitely be submitted to a journal like PRB (pending the
+minor comments below), and could maybe be accepted in PRX Quantum if
+some more work was done. 
+\tcblower
+\textbf{Reply:} We are greatly thankful to his/her valuable comments on our paper. As referee B has mentioned, an important innovation of our manuscript lies in the novel geometries of the subsystem symmetry. To further elaborate this point, we added more models as well as relevant physical discussions and mathematical proofs, improving the diversity and the completeness on the topic of subsystem geometry. %The corresponding changes can be found in Section~\ref{model_ivb}.
+
+
+ Advice of referee B on the works that may be added to the manuscript is very insightful. Actually, we have been digging into our manuscript and harvested more results that coincide with some of his/her comments. We added these results to our manuscript and organized them basing on his/her observations and our knowledge. Here we make a summary of our replies to referee B.
+\begin{outline}[itemize]
+    \1 We have made reviews and comparisons between our HOCA approach and the existing CA approaches that may also construct subsystem symmetries like quantum cellular automata (QCA) and matrix cellular automata (MCA). Detailed information are shown in \textbf{Reply 5A}.
+    \1 We added more details to show that the RSPT phases discussed in our manuscript contains a large class of models, rather than referring to 2D cluster models only. Also, we added a proof to show that the model-IV (renamed as model-IVa in the revised manuscript) is not actually equivalent to the well-known 2D cluster model. Detailed information can be found in \textbf{Reply 5B, 10}.
+    \1 In the part of multi-point strange correlator, we added further explanations to our innovation points and a completely new part regarding the connection between multi-point strange correlator and the origin of \textit{spurious topological entanglement entropy} (STEE) to make our work more solid. Detailed information can be found in \textbf{Reply 6A, 6B}.
+    \1 As for the detail of our HOCA classification (about patterns, rules and HGSPT phases) of which the details two referees are both interested in, we added details in constructing such classification system and mathematical proofs of our statement. Detailed information can be found in \textbf{Reply 7, 8A, 8B, 9}.
+    \1 We have corrected the mistakes of references and added some relevant citations according to the advice of referee B. Detailed information can be found in \textbf{Reply 11}.
+\end{outline}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Reply 5A (point-to-point reply), breakable]
+\textbf{Referee B:}  The authors should acknowledge previous works where subsystem SPT phases are constructed using quantum cellular automata, namely
+``Subsystem symmetries, quantum cellular automata, and computational
+phases of quantum matter'' by Stephen et al. and ``Computational
+universality of symmetry-protected topologically ordered cluster
+phases on 2D Archimedean lattices'' by Daniel et al. These works are
+based on Clifford quantum cellular automata which, in some cases, can
+be equivalently described in terms of order-2 cellular automata.
+
+......
+
+The matrix cellular automata used in ``Beyond the freshman's dream: Classical fractal spin liquids from matrix cellular automata in
+three-dimensional lattice models'' by Biswas et al. are a similar generalization.
+\tcblower
+\textbf{Reply:}
+The observation of referee B is insightful and pointed out there are some connections between our approach and the existing approaches. Nevertheless, we believe both  the resulting physics and the approaches matter. In the aspect of resulting subsystem symmetries, HOCA approach gives a more universal and abundant class of subsystem symmetry. So far, SPT protected by mixed type (fractal and line-like symmetries, two different fractal symmetries) and chaotic-looking subsystem symmetries have not yet been found in the papers using other approaches to the best of our knowledge. Certainly,  different approaches can generate equivalent subsystem SPT phases in some cases, but they are intrinsically distinctive methods. To further clarify this point, we made a review and comparison between current CA approaches in constructing subsystem symmetries (HOCA, CQCA and MCA), which can be found in Appendix~\ref{ca_review}, Table~\ref{tab:ca_compare} of our modified manuscript. These papers (cited as Ref.~[168-170] in the revised manuscript) are added to the citation.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Reply 5B (point-to-point reply), breakable]
+\textbf{Referee B:}  Because of this, some of the ideas of the present paper have appeared in these papers. For example, the 2D square-lattice cluster state
+(RSPT in the authors notation) can be constructed in this way.
+\tcblower
+\textbf{Reply:} We would like to clarify that, as referee B has mentioned that our HOCA approach contains a large variety of subsystem geometries, RSPT denotes a large class of phases of matter rather than a single model, containing miscellaneous models other than the 2D cluster model. Our definition of the RSPT (regular SPT) is the SPT phases protected by subsystem symmetries that necessarily \textit{(i)} include regular symmetries (e.g. line-like symmetry) and \textit{(ii)} exclude fractal symmetries. So when regular symmetries and chaotic-looking symmetries exist simultaneously in one model and fractal symmetries do not, the model is classfied as RSPT phase as well. For clarity, we add a summary of the technical definitions of each type of SPT orders protected by subsystem symmetries in Sec.~\ref{notation}. Also, the representative model of RSPT in our original manuscript (model-IV, renamed as model-IVa in the revised manuscript) is not actually equivalent to the 2D cluster model. This statement is explained by adding Appendix~\ref{diff} to our manuscript. Similar interests of referee B can be found in \textbf{Reply 10}. To further demonstrate our idea, we add more models in the class of RSPT order in the main text, having different subsystem symmetries to Model-IV (renamed Model-IVa in the modified manuscript), which can be found in Section~\ref{model_ivb}, \ref{D-RSPT2} in our modified manuscript. The diversity of RSPT orders is also clearly shown in the updated Table.~\ref{table_label}.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Reply 6A (point-to-point reply), breakable]
+\textbf{Referee B:}  As the authors are aware, the SPT models constructed by
+(higher-order) cellular automata are dual to symmetry breaking models
+with the same symmetry. In the later context, the idea of multi-point
+correlation functions has already been introduced and related to ideas
+like fractal structure, see ``Fractal Quantum Phase Transitions:
+Critical Phenomena Beyond Renormalization'' by Zhou et al., ``Fractal
+Symmetric Phases of Matter'' by Devakul et al., ``Identifying Phases of
+Quantum Many-Body Systems That Are Universal for Quantum Computation''
+by Doherty and Bartlett, and others. Mapping these multi-point
+correlation functions back to the dual SPT results in membrane-like
+order parameters which in turn imply the strange correlators described
+in the present paper. Therefore, simply defining these multi-point
+strange correlators is not particularly novel in my opinion.
+\tcblower
+\textbf{Reply:} Here we would like to explain our motivation of introducing multi-point strange correlator (MPSC). First, we introduce MPSC because there are models which can only be detectable  when the number of points in the strange correlators is larger than 2. While the specific form of MPSC may be obtained by duality, it is not shown previously that these models can only be detected by correlators with more than 2 points. In the original manuscript, we gave a detailed proof to show that such model does exist, as shown in Appendix~\ref{proof}. Second, the discovery of these SPT phases with exotic subsystem symmetries leads us to ask how to design MPSC for such peculiar symmetries, and we have shown that the configuration of MPSC is strongly related to the geometry of the subsystem. As for more potential applications of MPSC, we added an entirely new section (Sec.~\ref{MPSC+STEE}) 
+ elaborating the hidden relation between MPSC and the nonlocal stabilizers in the \textit{spurious topological entanglement entropy} (STEE), see \textbf{Reply 6B} for more details.
+
+\bigskip
+Also, we are grateful for he/she pointing out the connections between MPSC and the membrane order parameter in symmetry breaking models, and we have added these citations (Ref.~[158,159]) into the manuscript.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Reply 6B (point-to-point reply),breakable]
+\textbf{Referee B:}  If these
+strange correlators were used to, say, probe some new kinds of
+criticality enabled by the exotic subsystem symmetries, this could
+make their introduction more compelling. On that note, the dual SSB
+models seem to have a higher degree of general interest than the SPT
+models, so it could be worthwhile to describe them in more detail than
+what is currently given in the paper.  
+\tcblower
+\textbf{Reply:} This is really a good suggestion. The idea of probing more physics via multi-point strange correlators is a valid point to enrich our research. Basing on our current research interests, we would like to dig into this topic towards a different direction instead of the realm of quantum criticality and SSB models. In fact, similar to the interests of referee B, we are also probing new possibilities of MPSC, and have obtained some exciting results. We would like to thank editor and referee B for giving us a chance to share with you our new results. 
+
+We added a new section (Sec.~\ref{MPSC+STEE}) discussing that nonlocal stabilizers that may contribute to the spurious topological entanglement entropy (STEE) can also appear in a general HGSPT phase, beyond the realm of SSPT phase only. We show that these nonlocal stabilizers are actually equivalent to the configuration of operators in certain MPSC (Fig.~\ref{fig:STEE1}, \ref{fig:STEE2}), showing different geometries depending on the HOCA rule. These nonlocal stabilizers can contribute to STEE in more exotic boundary conditions, which we have shown in the modified manuscript in Sec.~\ref{MPSC+STEE}.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Reply 7 (point-to-point reply)]
+\textbf{Referee B:}  There are several statements made in the paper where it is not clear
+if they are rigorously proven, or simply observations based on the
+examples shown in the paper. These include, for example, the numbered
+and bullet-pointed lists on page 12, and Eqs. 49 and 50. The claims
+that are proven rigorously in the appendix are nice, and it would be
+good if the other similar claims throughout the paper could be made
+with the same level of rigor.
+\tcblower
+\textbf{Reply:} We have added details to improve rigorousness, following the valuable advice from referee B, both in the main text and the appendix to reach the level of rigor of appendices in the previous manuscript. We made modifications in Section.~\ref{notation} and Appendix~\ref{HOCA_prop}, \ref{sc_proof}.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Reply 8A (point-to-point reply),breakable]
+\textbf{Referee B:}  The various quantities introduced by the authors that characterize
+the symmetries are interesting, but one is led to ask whether they are
+``complete'' in any sense, ie. whether all physically relevant
+properties can be predicted once these quantities are known.
+\tcblower
+\textbf{Reply:} This is a really important advice, and the completeness of our HOCA classification is a question that both referees are interested in, and is a huge and difficult task.  One can see \textbf{Reply 2} for our reply to a similar question from referee A. For the question from referee B, we make following explanations:
+
+It is safe to say that all physically relevant properties are determined by the Hamiltonian of the model (together with some boundary conditions). As these quantities are determined by the specific geometry of Hamiltonian terms and captures the properties of the spatial distribution of the symmetry, we expect these quantities to give a good prediction of properties that are related to the geometric aspect of the model. For example, the specific configuration of MPSC and the points 
+ in MPSC needed to detect the nontrivial SRE ground state of the HGSPT model is strongly related to these quantities. Also, as a new part added in our work in Sec.~\ref{MPSC+STEE}, we discover that a certain kind of MPSC configuration are inextricably connected to nonlocal stabilizers that contribute to the spurious values of topological entanglement entropy of the model, whose properties can also be predicted in a certain degree by these quantities, as shown in Sec.~\ref{con_mpsc} of our modified manuscript.
+ 
+\bigskip
+
+ Nevertheless, we have to admit that our classification of HOCA does not capture every possible property of a HGSPT phase. As the original HOCA rule contains all possible information and our classification is not a 1-to-1 mapping form HOCA rules, there will certainly be information that is lost under this ``coarse graining''. If one wants to obtain all possible physical properties of a certain HGSPT model, one should always resort to the HOCA rule that generates the Hamiltonian.
+ 
+\bigskip
+
+ As for the ``completeness'' of HGSPT phase, we added an appendix to mathematically discuss whether any kind of subsystem symmetry can be understood as a HOCA symmetry, which can be found in Appendix~\ref{universality}.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Reply 8B (point-to-point reply),breakable]
+\textbf{Referee B:}  Similarly, it would be nice if the authors explained how to compute
+these quantities from the defining HOCA. For example, in the case of
+Clifford quantum cellular automata, many properties of the symmetries
+can be determined from the defining automata using a simple trace
+formula.
+\tcblower
+\textbf{Reply:} Currently we have not found ways to quickly obtain these quantities, since the complex mathematical nature of HOCA. The trace formula mentioned by referee B is related to \textit{Cayley-Hamilton theorem}, which we have found similar results are present in our HOCA model. However, the \textit{Cayley-Hamilton theorem} is not so related to our classification system, so the simple trace formula can not be applied to obtain quantities in our classification. In general, these quantities are currently calculated by \textit{Python}, involving some enumerations. Luckily the computation process costs little time, which is relatively a simple task for a modern computer. We added more details of designing such algorithm in Sec.~\ref{notation} to make these quantities more accessible and understandable. In conclusion, these quantities can be calculated by taking up a HOCA pattern and counting the sites with state 1 in every row (white cubes), and the quantities can be done by computer. The more the lines we consider, the more accurate these quantities will be.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Reply 9 (point-to-point reply)]
+\textbf{Referee B:}  Is there a reason that order-3 HOCA was needed to get a chaotic SPT? Can this be proven in the same manner as Appendix A?
+\tcblower
+\textbf{Reply:} There are chaotic SPT (CSPT) models generated by an order-2 CA, so it doesn't have to be order-3 to obtain a CSPT. As for the mathematical criterion that determines whether a HOCA rule can produce chaotic patterns, we conclude that this question is partly solved in the realm of mathematics and remains to be explored. So far, some of the necessary conditions that ensures a chaotic HOCA rule are discovered, including the \textit{sensitivity to initial condition} and \textit{topological transitivity}, \textit{ergodicity} (some of these conditions may be equivalent in some cases). The mathematical details are supplemented in Appendix~\ref{HOCA_prop} in the manuscript.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Reply 10 (point-to-point reply)]
+\textbf{Referee B:}  The authors claim that the model in Fig. 10 is different from the
+square-lattice cluster state, but it is in fact the same model up to a
+simple shift of one sublattice with respect to the other.
+\tcblower
+\textbf{Reply:} Sorry for not having demonstrated this model clearly in our paper and caused this misunderstanding. We added detailed explanations in Appendix~\ref{diff} to compare two models, showing that they have different symmetries. We have proved that the HOCA rule corresponds to 2D cluster model and the HOCA rule of model-IV (renamed model-IVa in the revised manuscript) have different dynamical properties in Appendix~\ref{HOCA_prop}, Table~\ref{chaostable}.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Reply 11 (point-to-point reply),breakable]
+\textbf{Referee B:} 
+\begin{outline}[enumerate]
+    \1 Is the mix rate M (Eq. 29) an idea originating from classical
+cellular automata? If so, it should be properly cited.
+\1 Minor comments:
+\2 In the outlook, the authors refer to the possibility of generating
+SETs with cellular automata. It should be noted that this was done in
+Phys. Rev. B 106, 085104.
+\2 The authors may want to cite ``Fractalizing quantum codes'' by Devakul
+and Williamson, where the idea of generating spin models from cellular
+automata was generalized and also applied to higher dimensions.
+\2 Fig. 13 is not referenced in main text (should be around Eq. 53).
+\2 What are the sites involved in the product over alpha, beta in Eq. 45?
+\2 On page 12, in the paragraph started by ``2. M=0:...'' there are
+references to Fig. 28a, 28b which do not exist.
+\end{outline}
+
+\tcblower
+\textbf{Reply:}
+We thank referee B for the careful reading of our manuscript. The scrutiny really helped us in enhancing our manuscript.
+\begin{outline}[enumerate]
+    \1 The idea of mix rate origin from our process of research and is not based on the concepts in classical cellular automata. To the best of our knowledge, there are no similar quantities that has been proposed in the realm of CA yet. We reviewed mathematical papers on the topic of dynamical properties of higher-order cellular automata (HOCA) and linear cellular automata (LCA, some subclass named Frobenius LCA is topologically conjugate to the linear HOCA discussed in our manuscript, thus sharing the identical dynamical properties, e.g. sensitivity to initial condition, equicontinuity, topological transitivity, etc.) , and found no similar quantities to the mixed rate. In terms of the classifying HOCA rules, the mix rate seems to fit the visual properties of the HOCA pattern better than the classifications originating from mathematical papers. Some pictures demonstrating this quantity are shown in Sec.~\ref{notation}, see Fig.\ref{fig:M_def1}, \ref{fig:M_def2}.
+    \1 Thanks for reminding us and we have changed the manuscript correspondingly.
+    \2 Citation is added in Sec.~\ref{summary} as Ref.~[161].
+    \2 Citation is added in Sec.~\ref{summary} as Ref.~[162].
+    \2 Reference is added on page \pageref{crit2}.
+    \2 Remarks are added on page \pageref{sc_derivation}.
+    \2 References are fixed on page \pageref{M_expl}.
+
+\end{outline}
+\end{tcolorbox}
+
+
+
+%\bibliographystyle{unsrt}
+%\bibliography{reference}
+
+
+
+ %   \includepdf[pages=1-46]{latexdiff.pdf}
+\end{document}

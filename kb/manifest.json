@@ -1,7 +1,7 @@
 {
   "name": "YE Group Toolkit",
   "public_url": "https://yurucamp.notion.site/ye-group-toolkit",
-  "synced_at": "2026-11-25T07:58:43Z",
+  "synced_at": "2026-11-25T08:05:53Z",
   "page_count": 12,
   "pages": [
     {
@@ -16,21 +16,7 @@
       "path": "kb/pages/home.md",
       "assets": [],
       "public_url": "https://yurucamp.notion.site/ye-group-toolkit",
-      "last_edited_time": "2026-11-25T07:30:00.000Z"
-    },
-    {
-      "slug": "page-4238de2e-2",
-      "id": "4238de2e-6f7d-8155-baf3-c71aad5dfa23",
-      "title": "劳务费发放全流程（薪酬门户）",
-      "icon": "💰",
-      "category": "",
-      "summary": "",
-      "tags": [],
-      "parent": "报销全流程（中山大学）",
-      "path": "kb/pages/page-4238de2e-2.md",
-      "assets": [],
-      "public_url": "https://yurucamp.notion.site/4238de2e6f7d8155baf3c71aad5dfa23",
-      "last_edited_time": "2026-11-25T07:14:00.000Z"
+      "last_edited_time": "2026-11-25T08:04:00.000Z"
     },
     {
       "slug": "page-92c68fa7",
@@ -165,7 +151,7 @@
       "id": "4238de2e-6f7d-819c-9a59-f2d65de6deed",
       "title": "办公室打印资源指南（华为打印机 & 打印店预付款）",
       "icon": "🖨️",
-      "category": "行政与报销",
+      "category": "组内资源",
       "summary": "办公室华为毕昇 X1 Max 打印机全平台连接/驱动/避坑攻略（Jie-Yu Zhang 个人财产无偿共享）及打印店预付款说明（王晗燮管理）。",
       "tags": [
         "指南",
@@ -175,7 +161,42 @@
       "path": "kb/pages/page-4238de2e.md",
       "assets": [],
       "public_url": "https://yurucamp.notion.site/4238de2e6f7d819c9a59f2d65de6deed",
-      "last_edited_time": "2026-11-25T07:33:00.000Z"
+      "last_edited_time": "2026-11-25T08:04:00.000Z"
+    },
+    {
+      "slug": "page-4228de2e",
+      "id": "4228de2e-6f7d-8146-af83-e7d14d2d9c8d",
+      "title": "课题组服务器与超算资源指南",
+      "icon": "🖥️",
+      "category": "组内资源",
+      "summary": "课题组本地服务器（含 SSH 连接指南）与国家超算广州中心「天河星逸」资源概览、使用规范与负责人信息。",
+      "tags": [
+        "指南",
+        "新人必看"
+      ],
+      "parent": "YE Group Toolkit",
+      "path": "kb/pages/page-4228de2e.md",
+      "assets": [],
+      "public_url": "https://yurucamp.notion.site/4228de2e6f7d8146af83e7d14d2d9c8d",
+      "last_edited_time": "2026-11-25T08:04:00.000Z"
+    },
+    {
+      "slug": "page-4238de2e-2",
+      "id": "4238de2e-6f7d-8155-baf3-c71aad5dfa23",
+      "title": "劳务费发放全流程（薪酬门户）",
+      "icon": "💰",
+      "category": "行政与报销",
+      "summary": "中山大学薪酬门户发放学生助研津贴与校外科研劳务费全线上指南（含每月 1–22 日截止窗口与审批流）。",
+      "tags": [
+        "中大",
+        "指南",
+        "新人必看"
+      ],
+      "parent": "YE Group Toolkit",
+      "path": "kb/pages/page-4238de2e-2.md",
+      "assets": [],
+      "public_url": "https://yurucamp.notion.site/4238de2e6f7d8155baf3c71aad5dfa23",
+      "last_edited_time": "2026-11-25T08:04:00.000Z"
     },
     {
       "slug": "page-97beaf70",
@@ -183,7 +204,7 @@
       "title": "报销全流程（中山大学）",
       "icon": "🧾",
       "category": "行政与报销",
-      "summary": "中山大学外出参会差旅报销（线上电子网审 & 线下投单）、劳务费发放指南及常用入口。",
+      "summary": "中山大学外出参会差旅报销（线上电子网审 & 线下打印投单）及日常科研经费报销全流程与入口。",
       "tags": [
         "中大",
         "指南",
@@ -193,7 +214,7 @@
       "path": "kb/pages/page-97beaf70.md",
       "assets": [],
       "public_url": "https://yurucamp.notion.site/97beaf70e9864985853d03db3721c278",
-      "last_edited_time": "2026-11-25T07:14:00.000Z"
+      "last_edited_time": "2026-11-25T08:04:00.000Z"
     },
     {
       "slug": "mobility-toolkit-stabilizer-skill-4228de2e",
@@ -210,23 +231,6 @@
       "path": "kb/pages/mobility-toolkit-stabilizer-skill-4228de2e.md",
       "assets": [],
       "public_url": "https://yurucamp.notion.site/4228de2e6f7d810ab7b4d7b03216930b",
-      "last_edited_time": "2026-11-25T07:12:00.000Z"
-    },
-    {
-      "slug": "page-4228de2e",
-      "id": "4228de2e-6f7d-8146-af83-e7d14d2d9c8d",
-      "title": "课题组服务器与超算资源指南",
-      "icon": "🖥️",
-      "category": "计算与工具",
-      "summary": "课题组本地服务器（含 SSH 连接指南）与国家超算广州中心「天河星逸」资源概览、使用规范与负责人信息。",
-      "tags": [
-        "指南",
-        "新人必看"
-      ],
-      "parent": "YE Group Toolkit",
-      "path": "kb/pages/page-4228de2e.md",
-      "assets": [],
-      "public_url": "https://yurucamp.notion.site/4228de2e6f7d8146af83e7d14d2d9c8d",
       "last_edited_time": "2026-11-25T07:12:00.000Z"
     }
   ]
